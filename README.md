@@ -69,9 +69,9 @@ Dao : 부서와 사원에 대한 정보를 데이터베이스로부터 호출 �
 
 사원 정보 상세<br>
 
-    로그인 상태에서 정보상세 페이지가 활성화 되도록 ${not empty sessionScope.userId}를 사용하고,<br>
-    버튼을 눌러 페이지로 넘어갈때 <br>
-    onclick="location.href='information?userId=${sessionScope.userId}' 를 추가해 전달받은 userId 와 SELECT문을 데이터베이스로 전달해서 일치하는 데이터를 반환 받아온다.<br>
+    <!-- 로그인 상태에서 정보상세 페이지가 활성화 되도록 ${not empty sessionScope.userId}를 사용하고,
+    버튼을 눌러 페이지로 넘어갈때 
+    onclick="location.href='information?userId=${sessionScope.userId}' 를 추가해 전달받은 userId 와 SELECT문을 데이터베이스로 전달해서 일치하는 데이터를 반환 받아온다.-->
 
 후기<br>
 
