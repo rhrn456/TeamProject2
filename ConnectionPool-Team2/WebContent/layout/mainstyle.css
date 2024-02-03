@@ -1,0 +1,110 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+    /* 배경을 50% 투명하게 설정 */
+}
+
+/* 배경 이미지 설정 */
+.backimg {
+ background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('https://cdn.pixabay.com/photo/2016/06/10/14/34/architecture-1448221_1280.jpg'); /* 이미지 파일의 경로를 지정하세요 */
+  background-size: cover; /* 화면에 이미지를 꽉 채우도록 설정 */
+  background-position: center; /* 이미지를 가운데 정렬 */
+  height: 100vh; /* 화면 높이의 100%만큼 설정 (가로는 auto로 설정됩니다) */
+  color: white; /* 텍스트 색상을 흰색으로 설정 (옵션) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.main-title h1 {
+  font-size: 6em; /* 예시: 3em은 폰트 크기를 나타냅니다. 필요에 따라 조절하세요. */
+  color: #FAF7F7; /* 메인 제목 텍스트 색상 */
+  margin-bottom: 10px; /* 아래 여백 설정 */
+}
+
+.logo img {
+  width: 100px; /* 로고 이미지의 가로 크기를 설정하세요. 필요에 따라 조절하세요. */
+  height: auto; /* 로고 이미지의 세로 크기는 자동으로 조절됩니다. */
+}
+.custom-button {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* Remove border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underlines from links */
+    display: inline-block; /* Make the buttons inline blocks */
+    font-size: 16px; /* Set the font size */
+    margin: 4px 2px; /* Add some margin around the buttons */
+    cursor: pointer; /* Add a pointer cursor on hover */
+  }
+
+    .buttons {
+        margin-top: 5px;
+    }
+
+    .buttons button {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+.overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+
+.popup {
+
+        /* 기타 스타일링 속성들 */
+        
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%; /* 70%로 수정 */
+            height:100%;
+            max-width: 1300px;
+            max-height: 850px;
+            padding: 10px;
+            background: #fff;
+            z-index: 2;
+              box-sizing: border-box;
+  			text-align: center;
+            
+}
+  #popup button {
+    /* 원하는 색상으로 배경색을 설정합니다. */
+    background-color: black;
+    /* 텍스트 색상을 설정합니다. */
+  position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+  
+    
+  }
+
+  /* 버튼에 마우스를 올렸을 때의 스타일 설정 */
+  #popup button:hover {
+    /* 원하는 색상으로 배경색을 변경합니다. */
+    background-color: #2980b9;
+  }
+
+ 
