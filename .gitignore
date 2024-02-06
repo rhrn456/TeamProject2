@@ -485,7 +485,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
-.META-INF/context.xml
+META-INF/*.xml
 # JetBrains Rider
 *.sln.iml
 
